@@ -1,10 +1,11 @@
 from tkinter import *
 import sqlite3
-
+from function import *
 
 root = Tk()
 root.geometry("400x400")
 root.title("Pradhyum")
+
 
 # Button Functioning
 
@@ -44,37 +45,6 @@ def submit():
 
     #Close connection
     con.close()
-    
-# def Query_window():
-#     top = Toplevel()
-
-def Query():
-
-    top = Toplevel()
-    #Database crated
-    con = sqlite3.connect('pv.db')
-
-    #Datbase connection
-    cur = con.cursor()
-
-    #Data Fetching
-    cur.execute("SELECT * FROM address_book")
-    records = cur.fetchall()
-    
-    record_data =''
-    for record in records:
-        record_data += str(record) + "\n"
-    
-    query_fetch = Label(top, text=record_data)
-    query_fetch.grid(row=10,column=1)
-    
-    #Commit changes
-    con.commit()
-
-    #Close connection
-    con.close()
-
-
 
 
 
