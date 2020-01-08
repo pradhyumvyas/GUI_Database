@@ -132,7 +132,6 @@ Query_button.grid(row=9, column=1)
 
 
 
-
 # #Database crated
 # con = sqlite3.connect('pv.db')
 
@@ -146,6 +145,7 @@ Query_button.grid(row=9, column=1)
 
 # #Close connection
 # con.close()
+
 
 
 #mainloop
