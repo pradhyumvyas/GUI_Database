@@ -6,33 +6,36 @@ root = Tk()
 root.geometry("400x400")
 root.title("Pradhyum")
 
-#Database crated
-con = sqlite3.connect('pv.db')
+if  __name__ == "__main__":
+    #Database crated
+    con = sqlite3.connect('Database.db')
 
 
-#Datbase connection
+    #Datbase connection
 
-cur = con.cursor()
+    cur = con.cursor()
 
-#Table Creation
-cur.execute(""" CREATE TABLE address_book(
- 
-    FIRST_NAME text,
-    LAST_NAME text,
-    ADDRESS text,
-    CITY text,
-    STATE text,
-    ZIPCODE integer
-)
-""")
+    #Table Creation
+    cur.execute(""" CREATE TABLE address_book(
+    
+        FIRST_NAME text,
+        LAST_NAME text,
+        ADDRESS text,
+        CITY text,
+        STATE text,
+        ZIPCODE integer
+    )
+    """)
 
-#Commit changes
+    #Commit changes
 
-con.commit()
+    con.commit()
 
 
-#Close connection
-con.close()
+    #Close connection
+    con.close()
+
+
 
 #mainloop
 root.mainloop()
