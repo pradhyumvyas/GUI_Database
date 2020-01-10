@@ -3,7 +3,7 @@ import sqlite3
 from function import *
 
 root = Tk()
-root.geometry("400x400")
+root.geometry("500x500")
 root.title("Pradhyum")
 
 
@@ -94,10 +94,10 @@ zipcode_label.grid(row=7, column=2)
 
     #Buttons
 
-Submit_button = Button(root, text="Submit", command=submit)
+Submit_button = Button(root, text="Submit", command=submit, font=20)
 Submit_button.grid(row=8, column=2)
 
-Query_button = Button(root,text="Show Record", command=Query)
+Query_button = Button(root,text="Show Record", command=Query, font=20)
 Query_button.grid(row=9, column=1)
 
 
