@@ -3,7 +3,6 @@ from tkinter import *
 
 # Button Functioning
     
-
 def Query():
 
     top = Toplevel()

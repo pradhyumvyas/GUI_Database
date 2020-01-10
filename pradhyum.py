@@ -49,17 +49,17 @@ def submit():
 
 
 #GUI Creation
-heading = Label(root, text="Welcome to my Database page")
+heading = Label(root, text="Welcome to my Database page", font=50)
      
     #Functioning
 
-blank = Label(root, text="      ")
-first = Label(root, text="First Name")
-last = Label(root,text="Last Name")
-address = Label(root,text="Address")
-city = Label(root,text="City")
-state = Label(root,text="State")
-zipcode = Label(root,text="Zip Code")
+blank = Label(root, text="      ", font=20)
+first = Label(root, text="First Name", font=20)
+last = Label(root,text="Last Name", font=20)
+address = Label(root,text="Address", font=20)
+city = Label(root,text="City", font=20)
+state = Label(root,text="State", font=20)
+zipcode = Label(root,text="Zip Code", font=20)
 
 
     #Griding
